@@ -1,46 +1,203 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menos Veneno na Plantação</title>
+    <title>🌱 Menos Veneno, Mais Vidas</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <h1>🌱 Menos Veneno na Plantação</h1>
-    <p>Cuidar da terra é cuidar da vida!</p>
+<header class="hero">
+
+    <nav>
+        <h2>🌱 Menos Veneno</h2>
+
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#beneficios">Benefícios</a></li>
+            <li><a href="#dicas">Dicas</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="hero-texto">
+
+        <h1>Menos Veneno, Mais Vidas</h1>
+
+        <p>
+            Produzir alimentos saudáveis significa cuidar das pessoas,
+            do solo, da água e do futuro do planeta.
+        </p>
+
+        <a href="#sobre" class="botao">
+            Saiba Mais
+        </a>
+
+    </div>
+
 </header>
 
-<section class="card">
-    <h2>Por que reduzir os agrotóxicos?</h2>
-    <ul>
-        <li>✅ Protege a saúde das pessoas.</li>
-        <li>✅ Preserva rios e nascentes.</li>
-        <li>✅ Mantém o solo fértil.</li>
-        <li>✅ Ajuda a proteger os animais.</li>
-    </ul>
+<main>
+
+<section class="card" id="sobre">
+
+<h2>🌿 Por que reduzir os agrotóxicos?</h2>
+
+<p>
+
+O uso excessivo de agrotóxicos pode causar impactos à saúde humana,
+à biodiversidade e ao meio ambiente.
+
+Adotar práticas agrícolas sustentáveis ajuda a preservar os recursos naturais
+e promove uma produção de alimentos mais saudável.
+
+</p>
+
+</section>
+
+<section class="estatisticas">
+
+<div class="numero">
+<h2>70%</h2>
+<p>da água doce é utilizada na agricultura.</p>
+</div>
+
+<div class="numero">
+<h2>🐝</h2>
+<p>As abelhas são essenciais para a polinização.</p>
+</div>
+
+<div class="numero">
+<h2>🌎</h2>
+<p>Preservar o solo garante alimentos para as futuras gerações.</p>
+</div>
+
+</section>
+
+<section class="card" id="beneficios">
+
+<h2>🌱 Benefícios da agricultura sustentável</h2>
+
+<div class="beneficios">
+
+<div class="beneficio">
+🥗
+<h3>Alimentos Saudáveis</h3>
+<p>Menor exposição a resíduos químicos.</p>
+</div>
+
+<div class="beneficio">
+💧
+<h3>Água Limpa</h3>
+<p>Proteção dos rios e das nascentes.</p>
+</div>
+
+<div class="beneficio">
+🐝
+<h3>Proteção da Fauna</h3>
+<p>Conservação das abelhas e outros polinizadores.</p>
+</div>
+
+<div class="beneficio">
+🌳
+<h3>Solo Fértil</h3>
+<p>Maior equilíbrio ambiental.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="card" id="dicas">
+
+<h2>💡 Como reduzir o uso de agrotóxicos?</h2>
+
+<ul>
+
+<li>🌾 Rotação de culturas.</li>
+
+<li>🐞 Controle biológico de pragas.</li>
+
+<li>🌱 Uso de adubação orgânica.</li>
+
+<li>💧 Irrigação consciente.</li>
+
+<li>🌿 Incentivo à agricultura familiar.</li>
+
+</ul>
+
 </section>
 
 <section class="card">
-    <h2>Benefícios</h2>
-    <div class="beneficios">
-        <div>🌿 Alimentos mais saudáveis</div>
-        <div>💧 Água mais limpa</div>
-        <div>🐝 Proteção das abelhas</div>
-        <div>🌎 Menos poluição</div>
-    </div>
+
+<h2>🥬 Como identificar alimentos orgânicos?</h2>
+
+<p>
+
+Procure o selo de certificação, compre em feiras locais
+e dê preferência a produtores da agricultura familiar.
+
+</p>
+
+</section>
+
+<section class="card" id="quiz">
+
+<h2>❓ Mini Quiz</h2>
+
+<p>
+
+Qual destes ajuda a diminuir o uso de agrotóxicos?
+
+</p>
+
+<button onclick="respostaCorreta()">
+Controle Biológico
+</button>
+
+<button onclick="respostaErrada()">
+Aplicar mais veneno
+</button>
+
+<p id="resultadoQuiz"></p>
+
 </section>
 
 <section class="card">
-    <button onclick="mostrarMensagem()">
-        Saiba Mais
-    </button>
 
-    <p id="mensagem"></p>
+<h2>📚 Curiosidade</h2>
+
+<p id="mensagem"></p>
+
+<button onclick="mostrarMensagem()">
+Mostrar Curiosidade
+</button>
+
 </section>
+
+</main>
+
+<footer>
+
+<p>
+
+🌎 Pequenas atitudes fazem grande diferença.
+Cuidar da natureza é cuidar da vida.
+
+</p>
+
+<p>
+© 2026 - Menos Veneno, Mais Vidas
+</p>
+
+</footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
