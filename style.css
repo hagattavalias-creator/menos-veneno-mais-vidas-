@@ -1,268 +1,250 @@
-/* RESET */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* =========================
+RESET
+========================= */
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    background-image:url("1000166541.png");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-    color:#333;
+    background:#eaf7e6;
+    color:#1f2d1f;
+    line-height:1.6;
 }
 
-/* HERO */
-
-.hero{
-    min-height:100vh;
-    background:rgba(0,80,0,0.65);
-    color:white;
-}
-
-/* MENU */
+/* =========================
+MENU
+========================= */
 
 nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:20px 8%;
-    background:rgba(0,0,0,.25);
+    background:rgba(0,0,0,0.6);
     position:sticky;
     top:0;
+    z-index:1000;
+    backdrop-filter:blur(10px);
 }
 
 nav h2{
-    font-size:28px;
+    color:white;
 }
 
 nav ul{
     display:flex;
     list-style:none;
-    gap:25px;
+    gap:20px;
 }
 
 nav a{
     color:white;
     text-decoration:none;
-    font-weight:bold;
-    transition:.3s;
+    font-weight:600;
+    transition:0.3s;
 }
 
 nav a:hover{
-    color:#90ee90;
+    color:#7CFF7C;
 }
 
-/* TEXTO PRINCIPAL */
+/* =========================
+HERO
+========================= */
+
+.hero{
+    min-height:100vh;
+    background:linear-gradient(rgba(0,80,0,0.7), rgba(0,0,0,0.6)),
+    url("1000166541.png");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
 
 .hero-texto{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    height:80vh;
-    padding:20px;
+    text-align:center;
+    padding:120px 20px;
 }
 
 .hero-texto h1{
-    font-size:55px;
+    font-size:3rem;
     margin-bottom:20px;
 }
 
 .hero-texto p{
-    font-size:22px;
-    max-width:700px;
-    margin-bottom:30px;
+    font-size:1.2rem;
+    max-width:600px;
+    margin:0 auto 30px;
 }
 
-/* BOTÃO */
+/* =========================
+BOTÕES
+========================= */
 
-.botao,
-button{
-
-    background:#2e8b57;
+button,
+.botao{
+    background:#2e7d32;
     color:white;
-    padding:14px 30px;
     border:none;
-    border-radius:30px;
-    text-decoration:none;
+    padding:12px 25px;
+    border-radius:10px;
     cursor:pointer;
-    font-size:17px;
-    transition:.3s;
-
+    transition:0.3s;
+    font-weight:600;
 }
 
-.botao:hover,
-button:hover{
-
+button:hover,
+.botao:hover{
     background:#1b5e20;
     transform:scale(1.05);
-
 }
 
-/* CARDS */
+/* =========================
+CARDS
+========================= */
 
 .card{
-
-    width:85%;
-    max-width:1000px;
-    margin:40px auto;
-    background:rgba(255,255,255,.92);
+    background:white;
+    margin:30px auto;
     padding:30px;
-    border-radius:18px;
-    box-shadow:0 8px 20px rgba(0,0,0,.25);
+    width:85%;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
 
+.card:hover{
+    transform:translateY(-5px);
 }
 
 .card h2{
-
-    color:#1b5e20;
-    margin-bottom:20px;
-
+    margin-bottom:15px;
+    color:#2e7d32;
 }
 
-.card p{
-
-    line-height:1.8;
-
-}
-
-.card ul{
-
-    text-align:left;
-    width:fit-content;
-    margin:20px auto;
-    line-height:2;
-
-}
-
-/* BENEFÍCIOS */
+/* =========================
+BENEFÍCIOS
+========================= */
 
 .beneficios{
-
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    gap:15px;
 }
 
 .beneficio{
-
     background:#e8f5e9;
-    padding:25px;
-    border-radius:15px;
-    transition:.3s;
-
+    padding:20px;
+    border-radius:12px;
 }
 
-.beneficio:hover{
-
-    transform:translateY(-8px);
-
-}
-
-.beneficio h3{
-
-    margin:10px 0;
-
-}
-
-/* ESTATÍSTICAS */
+/* =========================
+ESTATÍSTICAS
+========================= */
 
 .estatisticas{
-
-    width:90%;
-    margin:40px auto;
-
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-    gap:20px;
-
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:15px;
+    width:85%;
+    margin:40px auto;
 }
 
 .numero{
-
     background:#2e7d32;
     color:white;
-    padding:30px;
-    border-radius:15px;
-
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
 }
 
-.numero h2{
+/* =========================
+GALERIA
+========================= */
 
-    font-size:42px;
-
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
+    gap:10px;
 }
 
-/* QUIZ */
+.galeria img{
+    width:100%;
+    border-radius:10px;
+    transition:0.3s;
+}
 
-#resultadoQuiz{
+.galeria img:hover{
+    transform:scale(1.05);
+}
 
-    margin-top:20px;
-    font-size:18px;
+/* =========================
+FAQ
+========================= */
+
+details{
+    background:#f1f8f1;
+    margin:10px 0;
+    padding:10px;
+    border-radius:8px;
+}
+
+/* =========================
+FORMULÁRIO
+========================= */
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+/* =========================
+QUIZ / RESULTADOS
+========================= */
+
+#resultadoQuiz,
+#resultadoCalculo{
+    margin-top:15px;
     font-weight:bold;
-
 }
 
-#mensagem{
-
-    margin-top:20px;
-    font-weight:bold;
-    color:#2e7d32;
-
-}
-
-/* RODAPÉ */
+/* =========================
+FOOTER
+========================= */
 
 footer{
-
+    text-align:center;
     background:#1b5e20;
     color:white;
     padding:30px;
-    margin-top:50px;
-
+    margin-top:40px;
 }
 
-/* RESPONSIVO */
+/* =========================
+RESPONSIVO
+========================= */
 
 @media(max-width:768px){
 
 nav{
-
     flex-direction:column;
-    gap:15px;
-
-}
-
-nav ul{
-
-    flex-direction:column;
-    gap:10px;
-
 }
 
 .hero-texto h1{
-
-    font-size:38px;
-
-}
-
-.hero-texto p{
-
-    font-size:18px;
-
+    font-size:2rem;
 }
 
 .card{
-
     width:95%;
-
 }
 
 }
